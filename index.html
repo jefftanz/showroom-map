@@ -8,6 +8,7 @@
       defer
     ></script>
     <script src="location.js"></script>
+    <script src="location2.js"></script>
     <!-- jsFiddle will insert css and js -->
 
     <style>
@@ -38,7 +39,7 @@
     function initMap() {
       // { lat: 33.748, lng: -84.387 }
 
-      console.log('length: ' + location_data.length);
+      // console.log('length: ' + location_data2.length);
 
       const atl = { lat: 33.748, lng: -84.387 };
 
@@ -53,18 +54,42 @@
 
     function loadData(){
 
-      console.log('length: ' + location_data.length);
+      // console.log('length: ' + location_data2.length);
 
-      for (let x = 0; x < location_data.length; x++){
+      for (let x = 0; x < location_data2.length; x++){
 
-        const name = `<div id="content">${location_data[x].LOCATION}</div>`;
-        const url = `<div><a href="${location_data[x].URL}" target="_blank">View Virtual Tour</a></div>`
-        const showUrl = (location_data[x].SHOW === 'Y');
+        // const name = `<div id="content">${location_data2[x].ADDRESS}</div>`;
+        const url = `<div> <br /> </div><div><a href="${location_data2[x].LINK}" target="_blank">View Virtual Tour</a></div>`
 
-        let contentString = name;
+        // 444 Livingston St, Norwood, New Jersey, 07648"
+        //    444 Livingston St
+        //    Norwood
+        //    New Jersey
+        //    07648
+
+        let location = location_data2[x].ADDRESS2.split(',');
+        // const start = `<div id="address">`;
+        // const lineOne = `<div id="one">${location[0].trim()}</div>`; 
+        // const lineTwo = `<div id="two">${location[1].trim() + ' ' + location[2].trim() + ' ' + location[3].trim()}</div>`; 
+        // const end = `</div>`
+
+        // https://www.google.com/maps/search/?api=1&query=centurylink+field
+
+        const address_url = "https://www.google.com/maps/search/?api=1&query=ferguson+"+location[0].trim() +"+"+ location[1].trim() +"+"+ location[2].trim() +"+"+ location[3].trim();
+        // const map_url = `<div><a href="google.com" target="_blank">Get Directions</a></div>`;
+        const map_url = `<a target="_blank" href="${address_url}">${location[0].trim()}<br/>
+          ${location[1].trim() + ' ' + location[2].trim() + ' ' + location[3].trim()}</a>`
+
+        // try{
+          
+        // } catch(error){
+        //   console.log('error')
+        // }
+        
+        let contentString = map_url;
         let icon = "http://maps.google.com/mapfiles/ms/icons/red-dot.png";
 
-        if (showUrl){
+        if (location_data2[x].LINK.trim().length != 0){
           contentString+= url;
           icon = "http://maps.google.com/mapfiles/ms/icons/blue-dot.png"
         }
@@ -73,14 +98,13 @@
           content: contentString
         });
 
-        const lat = parseFloat(location_data[x].LAT);
-        const lng = parseFloat(location_data[x].LNG);
+        const lat = parseFloat(location_data2[x].LAT);
+        const lng = parseFloat(location_data2[x].LNG);
         
         const marker = new google.maps.Marker({
           position: { lat: lat, lng: lng },
           map,
-          icon: icon,
-          title: location_data[x].LOCATION
+          icon: icon
         });
         
         marker.addListener("click", () => {
