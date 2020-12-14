@@ -198,8 +198,8 @@ var location_data =
   {
       "ID": "0651",
       "LOCATION": "PASADENA CA - SHOWROOM",
-      "LAT": "49.0139234",
-      "LNG": "-57.5986531",
+      "LAT": "34.1476440",
+      "LNG": "-118.1429595",
       "ACTIVE": "Y",
       "SHOW": "Y",
       "URL": "https://my.matterport.com/show/?m=raJzGBPSKfA"
@@ -207,8 +207,8 @@ var location_data =
   {
       "ID": "0696",
       "LOCATION": "WOODLAND HILLS CA SHOWROOM",
-      "LAT": "48.8265445",
-      "LNG": "-123.6264973",
+      "LAT": "34.1683387",
+      "LNG": "-118.6059188",
       "ACTIVE": "Y",
       "SHOW": "Y",
       "URL": "https://my.matterport.com/show/?m=SXJ34NK2rEo"
@@ -216,8 +216,8 @@ var location_data =
   {
       "ID": "0699",
       "LOCATION": "SANTA MONICA CA",
-      "LAT": "46.724362",
-      "LNG": "-75.559685",
+      "LAT": "34.0194704",
+      "LNG": "-118.4912273",
       "ACTIVE": "Y",
       "SHOW": "Y",
       "URL": "https://my.matterport.com/show/?m=hXCKogFSmmN"
@@ -243,8 +243,8 @@ var location_data =
   {
       "ID": "0910",
       "LOCATION": "IRVINE CA SHOWROOM",
-      "LAT": "49.9584438",
-      "LNG": "-110.27326",
+      "LAT": "33.6856969",
+      "LNG": "-117.8259819",
       "ACTIVE": "Y",
       "SHOW": "Y",
       "URL": "https://my.matterport.com/show/?m=4XKrZ13fxqB"
@@ -396,8 +396,8 @@ var location_data =
   {
       "ID": "1940",
       "LOCATION": "VISTA CA - SHOWROOM",
-      "LAT": "50.6244465",
-      "LNG": "-100.7196973",
+      "LAT": "33.2000368",
+      "LNG": "-117.2425355",
       "ACTIVE": "Y",
       "SHOW": "Y",
       "URL": "https://my.matterport.com/show/?m=N5ZUMNZD2Es"
@@ -468,8 +468,8 @@ var location_data =
   {
       "ID": "2663",
       "LOCATION": "SANTA ROSA CA(Lighting Design)",
-      "LAT": "49.2633479",
-      "LNG": "-123.1025171",
+      "LAT": "38.4383888",
+      "LNG": "-122.7120819",
       "ACTIVE": "Y",
       "SHOW": "Y",
       "URL": "https://my.matterport.com/show/?m=kgDDytCuyK7"
@@ -1377,8 +1377,8 @@ var location_data =
   {
       "ID": "1022",
       "LOCATION": "SANTA BARBARA CA",
-      "LAT": "45.5361933",
-      "LNG": "-73.6077401",
+      "LAT": "34.4221319",
+      "LNG": "-119.7026673",
       "ACTIVE": "Y",
       "SHOW": "N",
       "URL": ""
@@ -1638,8 +1638,8 @@ var location_data =
   {
       "ID": "1609",
       "LOCATION": "CORDOVA TN - SHOWROOM",
-      "LAT": "-31.6794738",
-      "LNG": "115.7299805",
+      "LAT": "35.1556451",
+      "LNG": "-89.7761955",
       "ACTIVE": "Y",
       "SHOW": "N",
       "URL": ""
